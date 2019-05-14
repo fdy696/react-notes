@@ -7,12 +7,14 @@ import Notebooks from './Notebooks';
 import NotFind from './NotFind';
 import Notes from './Notes';
 import Trash from './Trash';
+import NotebooksDrawer from './NotebooksDrawer';
 
 const { Sider, Content } = Layout;
 
 class LayoutPage extends Component {
   state = {
-    collapsed: true
+    collapsed: true,
+    visible: true
   };
   onRoutes = ({ location }) => {
     return [location.pathname];
@@ -20,7 +22,7 @@ class LayoutPage extends Component {
 
   toggle = () => {
     this.setState({
-      collapsed: true
+      visible: !this.state.visible
     });
   };
 
@@ -38,6 +40,7 @@ class LayoutPage extends Component {
           collapsible
           collapsed={this.state.collapsed}
         >
+          <NotebooksDrawer visible={this.state.visible} toggle={this.toggle} />
           <div
             className="logo"
             style={{ textAlign: 'center', height: '60px', lineHeight: '60px' }}
@@ -56,7 +59,7 @@ class LayoutPage extends Component {
               </NavLink>
             </Menu.Item>
             <Menu.Item key="/notebooks">
-              <NavLink to="/notebooks">
+              <NavLink to="/notebooks" onClick={this.toggle}>
                 <Icon type="book" />
                 <span>笔记本</span>
               </NavLink>

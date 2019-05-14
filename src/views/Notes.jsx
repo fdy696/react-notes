@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Notebar from './Notebar';
-import { Icon, Button } from 'antd';
-import Dropdown from '../common/Dropdown';
 import './Notes.css';
 import NoteContent from './NoteContent';
 const dataSource = [
