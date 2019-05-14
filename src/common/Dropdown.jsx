@@ -7,7 +7,7 @@ class DropDown extends Component {
     console.log('click left button', e);
   };
 
-  handleMenuClick = e => {
+  handleMenuClick = () => {
     console.log('click', e);
   };
   render() {
