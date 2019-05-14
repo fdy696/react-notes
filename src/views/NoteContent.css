@@ -1,0 +1,33 @@
+.note-content-header {
+  padding: 16px 30px 0px 30px;
+}
+
+.note-content-header .header-top {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.7;
+}
+
+.note-content-header .shout-cut {
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  margin: 8px 20px;
+}
+.note-content .content {
+  font-weight: 200;
+  color: #333;
+  line-height: 30px;
+}
+
+.ant-tooltip {
+  font-size: 12px !important;
+}
+
+.ant-tooltip-inner {
+  min-height: 28px !important;
+  /* padding: 4px !important; */
+}

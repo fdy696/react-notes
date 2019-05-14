@@ -1,0 +1,26 @@
+.notes .content .note-content-header {
+  padding: 16px;
+}
+
+.notes .content .note-content-header .left {
+  float: left;
+}
+.notes .content .note-content-header .right {
+  float: right;
+}
+
+.notes .content .note-content-header .right > button {
+  margin-right: 10px;
+}
+
+.notes .note-content-header .left i {
+  font-size: 24px;
+  margin-right: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.notes .note-content-header .left i:hover {
+  opacity: 1;
+  /* color: red; */
+}

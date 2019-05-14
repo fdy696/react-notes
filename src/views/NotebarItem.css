@@ -1,0 +1,51 @@
+.notebar-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+  height: 60px;
+  margin: 0 16px;
+  opacity: 0.8;
+}
+
+.notebar-item-active {
+  border: 3px solid #ddd;
+  margin: 0;
+  padding: 0px 12px;
+}
+
+.notebar-item:hover {
+  color: #fff;
+  background: #2dbe11;
+  margin: 0;
+  padding: 0 16px;
+  border: none;
+}
+
+.notebar-item .right {
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.notebar-item .right i {
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 8px;
+}
+.notebar-item .right i:hover {
+  color: #ddd;
+}
+.notebar-item .title {
+  width: 220px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 35px;
+  line-height: 35px;
+}
+
+.notebar-item .date {
+  font-size: 12px;
+  color: #ababab;
+}
